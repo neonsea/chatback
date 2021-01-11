@@ -10,14 +10,14 @@ import org.bukkit.event.player.PlayerQuitEvent
 
 class PlayerJoinQuitListener : Listener {
     @EventHandler(priority = EventPriority.LOWEST) fun onPlayerJoin(event: PlayerJoinEvent) {
-        for (message in messageHistory.messages) {
+        for (message in MessageHistory.messages) {
                 event.player.sendMessage(ITALIC.toString() + message)
         }
         
-        messageHistory.add(event.joinMessage)
+        MessageHistory.add(event.joinMessage)
     }
     
     @EventHandler(priority = EventPriority.LOWEST) fun onPlayerQuit(event: PlayerQuitEvent) {
-        messageHistory.add(event.quitMessage)
+        MessageHistory.add(event.quitMessage)
     }
 }

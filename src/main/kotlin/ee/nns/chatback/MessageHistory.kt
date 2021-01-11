@@ -3,7 +3,7 @@ package ee.nns.chatback
 import java.util.concurrent.ConcurrentLinkedQueue
 
 
-class MessageHistory {
+object MessageHistory {
     val messages: ConcurrentLinkedQueue<String?> = ConcurrentLinkedQueue<String?>()
     fun add(message: String?) {
         while (messages.size > 50) {
@@ -13,5 +13,3 @@ class MessageHistory {
         messages.add(message)
     }
 }
-
-val messageHistory: MessageHistory = MessageHistory()
