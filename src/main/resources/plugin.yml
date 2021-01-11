@@ -1,0 +1,6 @@
+name: "ChatBack"
+version: "0.1"
+author: "nns.ee"
+main: "ee.nns.chatback.ChatBack"
+api-version: "1.15"
+depend: [KotlinPlugin]
