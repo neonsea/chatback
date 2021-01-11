@@ -1,11 +1,11 @@
 package ee.nns.chatback
 
+import org.bukkit.ChatColor.ITALIC
 import org.bukkit.event.EventHandler
+import org.bukkit.event.EventPriority
 import org.bukkit.event.Listener
 import org.bukkit.event.player.PlayerJoinEvent
 import org.bukkit.event.player.PlayerQuitEvent
-import org.bukkit.ChatColor.ITALIC
-import org.bukkit.event.EventPriority
 
 
 class PlayerJoinQuitListener : Listener {

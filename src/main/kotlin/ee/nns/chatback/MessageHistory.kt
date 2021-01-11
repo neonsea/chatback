@@ -1,6 +1,5 @@
 package ee.nns.chatback
 
-import org.bukkit.event.player.AsyncPlayerChatEvent
 import java.util.concurrent.ConcurrentLinkedQueue
 
 

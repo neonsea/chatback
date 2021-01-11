@@ -1,5 +1,7 @@
 package ee.nns.chatback
+
 import org.bukkit.plugin.java.JavaPlugin
+
 
 class ChatBack : JavaPlugin() {
     override fun onEnable() {
